@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment / Secrets
+.env
+.env.*
+!.env.example
+
+# Empirica Runtime
+.empirica/local/
+.empirica/id
+.empirica/release
+
+# Build Output
+server/dist/
+client/dist/
+
+# Experiment Data
+test-empirica*/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Misc
+*.log
+.claude/

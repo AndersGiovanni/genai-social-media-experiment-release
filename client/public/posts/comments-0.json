@@ -1,0 +1,23 @@
+[
+    {
+        "content_id": 2,
+        "user_id": 2,
+        "content": "I would argue being trainable in multiple areas is a form of intelligence. Dogs are trained to provide an array of important services to humans (guide dogs, assisting firefighters and police, etc.) and the ability to do this definitely requires considerable intelligence.\n\nPerhaps one of the best examples to demonstrate dog's intelligence is the fact that they can be trained to read on a basic level. So far, there is no evidence that cats can read and understand written language in the way that dogs can. The reading ability of dogs is limited to single words (no sentences or paragraphs), but it is still very impressive all things considered.",
+        "timestamp": 1720915200000,
+        "parent_content_id": 1
+    },
+    {
+        "content_id": 3,
+        "user_id": 1,
+        "content": "Great info on dogs being able to read I have never heard that before. That’s pretty smart. I said I wasn’t asking about trainability because I’ve seen my cats solve problems on their own, without having human instructions at all. I feel like this is smarter than teaching them to solve a problem. For example I’ve had a cat that ripped open a bag of cat litter and then spread it out on the carpet rather than pooping on the floor(her box was outside and she got locked inside on accident) and to me that shows a complex problem solving ability.",
+        "timestamp": 1720915200000,
+        "parent_content_id": 2
+    },
+    {
+        "content_id": 4,
+        "user_id": 3,
+        "content": "And my dogs know how to open the back door to get outside when they need to go potty, didn’t train them to do this because waking up to the door wide open sucks especially in the winter. The border collie figured it out and the other quickly learned from him.",
+        "timestamp": 1720915200000,
+        "parent_content_id": 3
+    }
+]

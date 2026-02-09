@@ -1,0 +1,175 @@
+factors:
+    - name: numRounds
+      desc: How many times participants will make a choice
+      values:
+        - value: 1
+        - value: 3
+        - value: 7
+    - name: chatEnabled
+      desc: Can players chat with each other during the game?
+      values:
+        - value: true
+        - value: false
+    - name: aiAccessToDemographics
+      desc: AI access to demographics
+      values:
+        - value: true
+        - value: false
+    - name: suggestionsEnabled
+      desc: Can players get suggestions for comment input?
+      values:
+        - value: true
+        - value: false
+    - name: feedbackEnabled
+      desc: Can players get AI feedback on comments?
+      values:
+        - value: true
+        - value: false
+    - name: conversationStarter
+      desc: An AI tool for starting the conversation.
+      values:
+        - value: false
+        - value: true
+    - name: playerCount
+      desc: playerCount determines the number of Players are in a Game.
+      values:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 4
+treatments:
+    - name: baseline_1
+      desc: Standard one-shot social media
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: false
+        numRounds: 1
+        playerCount: 1
+        suggestionsEnabled: false
+    - name: chat_1
+      desc: Standard one-shot social media with chat no AI access to demographics
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: true
+        numRounds: 1
+        playerCount: 1
+        suggestionsEnabled: false
+    - name: suggestions_1
+      desc: Standard one-shot social media with suggestions enabled (no access to demographics)
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: false
+        numRounds: 1
+        playerCount: 1
+        suggestionsEnabled: true
+    - name: feedback_1
+      desc: AI-based feedback on comment input
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: false
+        feedbackEnabled: true
+        numRounds: 1
+        playerCount: 1
+        suggestionsEnabled: false
+    - name: conversation_1
+      desc: 'Just a single player conversation starter. '
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: false
+        conversationStarter: true
+        feedbackEnabled: false
+        numRounds: 1
+        playerCount: 1
+        suggestionsEnabled: false
+    - name: chat_2
+      desc: Standard one-shot social media with chat no AI access to demographics
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: true
+        numRounds: 1
+        playerCount: 2
+        suggestionsEnabled: false
+    - name: suggestions_4
+      desc: Standard one-shot social media with suggestions enabled (no access to demographics)
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: false
+        numRounds: 1
+        playerCount: 4
+        suggestionsEnabled: true
+    - name: feedback_3
+      desc: AI-based feedback on comment input
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: false
+        feedbackEnabled: true
+        numRounds: 1
+        playerCount: 3
+        suggestionsEnabled: false
+    - name: conversation_4
+      desc: 'Just a single player conversation starter. '
+      factors:
+        aiAccessToDemographics: false
+        chatEnabled: false
+        conversationStarter: true
+        feedbackEnabled: false
+        numRounds: 1
+        playerCount: 4
+        suggestionsEnabled: false
+    - name: baseline_2
+      factors:
+        numRounds: 1
+        playerCount: 2
+    - name: baseline_3
+      factors:
+        numRounds: 1
+        playerCount: 3
+    - name: suggestions_2
+      factors:
+        numRounds: 1
+        playerCount: 2
+        suggestionsEnabled: true
+    - name: feedback_2
+      factors:
+        feedbackEnabled: true
+        numRounds: 1
+        playerCount: 2
+    - name: conversation_2
+      factors:
+        conversationStarter: true
+        numRounds: 1
+        playerCount: 2
+    - name: baseline_4
+      factors:
+        numRounds: 1
+        playerCount: 4
+    - name: suggestions_3
+      factors:
+        numRounds: 1
+        playerCount: 3
+        suggestionsEnabled: true
+    - name: baseline_5
+      factors:
+        numRounds: 1
+        playerCount: 5
+    - name: suggestions_5
+      factors:
+        numRounds: 1
+        playerCount: 5
+        suggestionsEnabled: true
+    - name: chat_5
+      factors:
+        chatEnabled: true
+        numRounds: 1
+        playerCount: 5
+    - name: feedback_5
+      factors:
+        feedbackEnabled: true
+        numRounds: 1
+        playerCount: 5
+    - name: conversation_5
+      factors:
+        conversationStarter: true
+        numRounds: 1
+        playerCount: 5

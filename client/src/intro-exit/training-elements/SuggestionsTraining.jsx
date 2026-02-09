@@ -1,0 +1,131 @@
+import { Container, Typography, Grid, Box, List, ListItem, ListItemText, Chip } from "@mui/material";
+
+export function SuggestionsTraining() {
+    return (
+        <Box sx={{
+            minHeight: '200px',
+            width: '100vw',
+            display: 'flex',
+            flexDirection: 'column',
+            overflowY: 'auto',
+            position: 'fixed',
+            top: '80px',
+            bottom: '0',
+            left: '0',
+            right: '0',
+            padding: { xs: 2, sm: 3, md: 4 }
+        }}>
+            <Typography variant="h4" gutterBottom>Platform Introduction</Typography>
+            <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} sx={{ flexGrow: 1 }}>
+                {/* Left side: Text and information */}
+                <Grid item xs={12} md={6}>
+                    <Box sx={{ height: '100%', overflowY: 'auto' }}>
+                        <Typography variant="body1" paragraph>
+                            <strong>🙋🏼‍♂️ Introduction</strong>
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            This section provides an overview of the platform's interface. Each conversation will contain content for you to interact with, and other users will also be actively engaging. You will see an initial post accompanied by comments. You can interact by clicking the "Comment" button to add a comment or the "React" button to express a reaction.
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            <strong>📋 Instructions</strong>
+                        </Typography>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="- Once the timer here ends, you will be presented with a social media-like platform, as shown on the right." />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText primary={<>- First, carefully read the content shown when you enter the conversation.</>} />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText primary={<>- Your task is to <strong>engage with the content by expressing your opinions, commenting on posts, and reacting to them.</strong></>} />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText primary={<>- You will have <strong>10 minutes</strong> to interact with each conversation.</>} />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText primary={<>- There are a total of <strong>3 conversations</strong> to participate in.</>} />
+                            </ListItem>
+                        </List>
+
+                        <Typography variant="body1" paragraph>
+                            <strong>🤖 AI Suggestions</strong>
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            You have been selected to try our{' '}
+                            <Chip
+                                label="AI Suggestions"
+                                size="small"
+                                sx={{
+                                    backgroundColor: '#E6F3FF', // Light blue color
+                                    color: '#0066CC', // Darker blue text for contrast
+                                    fontWeight: 'bold',
+                                    fontSize: '0.9rem',
+                                    height: '25px',
+                                    display: 'inline-flex',
+                                    verticalAlign: 'middle',
+                                }}
+                            />
+                            {' '}tool.
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            The AI Suggestions feature provides you with three "ready to use" comments for the post you want to respond to. When you activate this feature, you'll receive three different comment options:
+                        </Typography>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="- A comment that agrees with the post's stance." />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText primary="- A neutral comment." />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText primary="- A comment that disagrees with the post's stance." />
+                            </ListItem>
+                        </List>
+                        <Typography variant="body1" paragraph>
+                            You can choose to use one of these suggestions as-is or use them as a starting point for your own comment. This feature is designed to help you engage with different perspectives and can be particularly useful when you're unsure how to approach a topic or want to explore various viewpoints.
+                        </Typography>
+                    </Box>
+                </Grid>
+
+                {/* Right side: Placeholder GIF */}
+                <Grid item xs={12} md={6}>
+                    <Typography
+                        variant="h6"
+                        align="center"
+                        sx={{
+                            fontWeight: 'bold',
+                            mb: -2  // Reduces margin bottom to 8px (theme spacing unit)
+                        }}
+                    >
+                        <strong>Platform Demo</strong>
+                    </Typography>
+                    <Box
+                        sx={{
+                            width: '100%',
+                            height: { xs: '200px', sm: '300px', md: '100%' },
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            overflow: 'hidden',
+                        }}
+                    >
+                        <video
+                            src="/demos/suggestions.mov"
+                            controls
+                            controlsList="nodownload"
+                            muted
+                            playsInline
+                            style={{
+                                maxWidth: '100%',
+                                maxHeight: '100%',
+                                width: 'auto',
+                                height: 'auto',
+                                objectFit: 'contain',
+                            }}
+                        />
+                    </Box>
+                </Grid>
+            </Grid>
+        </Box>
+    )
+}
