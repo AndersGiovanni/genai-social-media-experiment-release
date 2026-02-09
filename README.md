@@ -1,7 +1,7 @@
 # GenAI Social Media Experiment
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18539373.svg)](https://doi.org/10.5281/zenodo.18539373)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![DOI](https://img.shields.io/badge/DOI-pending-lightgrey.svg)]()
 
 An experimental platform for studying how generative AI tools influence social media engagement. Built on [Empirica](https://empirica.ly/), the platform simulates a social media environment where participants interact with posts and comments under different AI-assistance conditions. The experiment implements a between-subjects design with five treatment conditions to isolate the effects of various AI interventions on user engagement behavior.
 
